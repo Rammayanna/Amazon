@@ -6,13 +6,7 @@ pipeline {
                 cleanWs()
             }
         }
-        
-        stage ('clone') {
-            steps {
-                sh 'git clone https://github.com/aklot07/Amazon'
-            }
-        }
-        
+              
         stage ('build') {
             
                 steps {
@@ -24,8 +18,7 @@ pipeline {
                 
                     
                 }
-            
-        }
+           
         
         stage ('test') {
             
